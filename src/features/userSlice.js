@@ -1,22 +1,46 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, createSelector } from "@reduxjs/toolkit";
+
+const initialState = {
+  user: null,
+  error: null,
+};
 
 export const userSlice = createSlice({
-  name: 'user',
-  initialState: {
-    user: null,
-  },
+  name: "user",
+  initialState,
   reducers: {
-    login: (state, action) => {
-      state.user = action.payload;
+    login: {
+      reducer: (state, action) => {
+        state.user = action.payload;
+        state.error = null;
+      },
+      prepare: (userData) => ({
+        payload: userData,
+      }),
     },
     logout: (state) => {
       state.user = null;
+      state.error = null;
+    },
+    setError: (state, action) => {
+      state.error = action.payload;
     },
   },
 });
 
-export const { login, logout } = userSlice.actions;
+export const { login, logout, setError } = userSlice.actions;
 
-export const selectUser = (state) => state.user.user;
+// Memoized selectors
+const selectUserState = (state) => state.user;
 
-export default userSlice.reducer; 
+export const selectUser = createSelector(
+  [selectUserState],
+  (userState) => userState.user
+);
+
+export const selectError = createSelector(
+  [selectUserState],
+  (userState) => userState.error
+);
+
+export default userSlice.reducer;

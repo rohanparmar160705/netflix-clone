@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
 import "./App.css";
 import { login, logout, selectUser } from "./features/userSlice";
 import { auth } from "./firebase";
 import HomeScreen from "./screens/HomeScreen";
 import Loader from "./screens/Loader";
 import LoginScreen from "./screens/LoginScreen";
-import PaymentScreen from "./screens/PaymentScreen/PaymentScreen";
 import ProfileScreen from "./screens/ProfileScreen";
 
 function App() {
@@ -15,9 +19,12 @@ function App() {
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
 
-  setTimeout(() => {
-    setUserLoggedInStatusFound(true);
-  }, 3000);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setUserLoggedInStatusFound(true);
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((userAuth) => {
@@ -34,26 +41,28 @@ function App() {
         dispatch(logout());
       }
     });
-    return unsubscribe;
+    return () => unsubscribe();
   }, [dispatch]);
+
+  if (!userLoggedInStatusFound) {
+    return <Loader />;
+  }
 
   return (
     <div className="app">
       <Router>
-        {!userLoggedInStatusFound ? (
-          <Loader />
-        ) : !user ? (
+        {!user ? (
           <LoginScreen />
         ) : (
           <Switch>
-            <Route path="/profile">
+            <Route exact path="/profile">
               <ProfileScreen />
             </Route>
-            <Route path="/payment/:productId">
-              <PaymentScreen />
-            </Route>
-            <Route path="/">
+            <Route exact path="/">
               <HomeScreen />
+            </Route>
+            <Route path="*">
+              <Redirect to="/" />
             </Route>
           </Switch>
         )}

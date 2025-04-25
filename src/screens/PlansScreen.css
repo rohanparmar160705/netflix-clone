@@ -1,0 +1,37 @@
+.planScreen__plan {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  opacity: 0.8;
+}
+
+.planScreen__plan:hover {
+  opacity: 1;
+}
+
+.planScreen__plan > button {
+  padding: 10px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+.planScreen__plan > .planScreen__btn__currentPackage {
+  color: #fff;
+  background-color: gray;
+}
+.planScreen__plan > .planScreen__btn__subscribe {
+  color: #fff;
+  background-color: #e50914;
+}
+
+@media (max-width: 767.98px) {
+  .planScreen__plan {
+    display: block;
+    padding: 20px;
+    opacity: 0.8;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
