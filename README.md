@@ -10,10 +10,7 @@ Check out the live demo: [Netflix Clone](https://netflix-clone-eed7b.web.app/)
 
 ## 🎥 Tutorial Video
 
-<video width="100%" controls>
-  <source src="https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/tutorial/netflix-clone-tutorial.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+https://user-images.githubusercontent.com/rohanparmar160705/netflix-clone/assets/src/images/tutorial/netflix-clone-tutorial.mp4
 
 *Watch the complete walkthrough of the Netflix Clone application*
 
@@ -39,22 +36,7 @@ Check out the live demo: [Netflix Clone](https://netflix-clone-eed7b.web.app/)
 ![Home Screen](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/HomeScreen.png)
 *Main dashboard with movie categories and recommendations*
 
-<details>
-<summary>Additional Features Screenshots</summary>
 
-- **Movie Details**
-  ![Movie Details](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/movie-details.png)
-  *Detailed movie information with trailer*
-
-- **Search Results**
-  ![Search](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/search.png)
-  *Movie search functionality*
-
-- **Payment Process**
-  ![Payment](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/payment.png)
-  *Razorpay payment integration*
-
-</details>
 
 ## 🚀 Features
 
