@@ -12,7 +12,7 @@ Check out the live demo: [Netflix Clone](https://netflix-clone-eed7b.web.app/)
 
 <div align="center">
   <video width="100%" controls autoplay muted loop>
-    <source src="https://rohanparmar160705.github.io/netflix-clone/src/images/tutorial/netflix-clone-tutorial.mp4" type="video/mp4">
+    <source src="https://rohanparmar160705.github.io/netflix-clone/netflix-clone-tutorial.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
