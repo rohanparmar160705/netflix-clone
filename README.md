@@ -20,23 +20,23 @@ Check out the live demo: [Netflix Clone](https://netflix-clone-eed7b.web.app/)
 ## 📸 Application Flow Screenshots
 
 ### 1. Base Page (Landing)
-![Base Page](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/basepage.png)
+![Base Page](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/BasePage.png)
 *Initial landing page with email signup form*
 
 ### 2. Login & Signup
-![Authentication](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/login-signup.png)
+![Authentication](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/Login&Signup.png)
 *User authentication screen with login/signup options*
 
 ### 3. Profile Screen
-![Profile](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/profile.png)
+![Profile](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/Profile.png)
 *User profile management and settings*
 
 ### 4. Plans Selection
-![Subscription Plans](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/plans.png)
+![Subscription Plans](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/Plans.png)
 *Subscription plans with Razorpay integration*
 
 ### 5. Home Screen
-![Home Screen](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/homescreen.png)
+![Home Screen](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/HomeScreen.png)
 *Main dashboard with movie categories and recommendations*
 
 <details>
