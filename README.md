@@ -351,3 +351,127 @@ VITE_TMDB_API_KEY=your_tmdb_api_key
 VITE_RAZORPAY_KEY_ID=your_razorpay_key_id
 VITE_RAZORPAY_KEY_SECRET=your_razorpay_key_secret
 ```
+
+## 🔥 Firebase Setup & Deployment
+
+### Firebase Project Setup
+
+1. Create a Firebase Project
+   ```bash
+   # Install Firebase CLI globally
+   npm install -g firebase-tools
+   
+   # Login to Firebase
+   firebase login
+   ```
+
+2. Go to [Firebase Console](https://console.firebase.google.com/)
+   - Click "Add Project"
+   - Enter project name
+   - Disable Google Analytics (optional)
+   - Click "Create Project"
+
+3. Register Your App
+   - Click on the web icon (</>)
+   - Register app with a nickname
+   - Copy the Firebase config object
+
+4. Create `firebase.js` in your `src` directory
+   ```javascript
+   import { initializeApp } from 'firebase/app';
+   import { getAuth } from 'firebase/auth';
+   import { getFirestore } from 'firebase/firestore';
+
+   const firebaseConfig = {
+     apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+     authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+     projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+     storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+     messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+     appId: import.meta.env.VITE_FIREBASE_APP_ID
+   };
+
+   const app = initializeApp(firebaseConfig);
+   const auth = getAuth(app);
+   const db = getFirestore(app);
+
+   export { auth, db };
+   ```
+
+### Enable Authentication
+
+1. In Firebase Console:
+   - Go to "Authentication" → "Get Started"
+   - Enable "Email/Password" sign-in method
+   - Save changes
+
+### Setup Firestore Database
+
+1. Create Database
+   - Go to "Firestore Database" → "Create Database"
+   - Choose "Start in production mode"
+   - Select your preferred region
+   - Click "Enable"
+
+2. Set up Firestore Rules
+   ```javascript
+   rules_version = '2';
+   service cloud.firestore {
+     match /databases/{database}/documents {
+       match /users/{userId} {
+         allow read, write: if request.auth != null && request.auth.uid == userId;
+       }
+       match /products/{productId} {
+         allow read: if request.auth != null;
+       }
+       match /customers/{customerId} {
+         allow read: if request.auth != null && request.auth.uid == customerId;
+       }
+     }
+   }
+   ```
+
+### Deploy to Firebase Hosting
+
+1. Initialize Firebase in your project
+   ```bash
+   # Initialize Firebase in your project directory
+   firebase init
+   
+   # Select these options:
+   # - Hosting: Configure files for Firebase Hosting
+   # - Use an existing project
+   # - Select your project
+   # - Use "dist" as public directory
+   # - Configure as single-page app: Yes
+   # - Set up automatic builds: No
+   ```
+
+2. Build and Deploy
+   ```bash
+   # Build your project
+   npm run build
+   
+   # Deploy to Firebase
+   firebase deploy
+   ```
+
+3. After deployment, you'll receive a hosting URL like:
+   `https://your-project-id.web.app`
+
+### Important Notes
+
+- **Environment Variables**: Create `.env` file in project root:
+  ```env
+  VITE_FIREBASE_API_KEY=your_api_key
+  VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
+  VITE_FIREBASE_PROJECT_ID=your_project_id
+  VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+  VITE_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+  VITE_FIREBASE_APP_ID=your_app_id
+  ```
+
+- **Firebase Config**: Never commit your Firebase config directly to version control
+- **Firestore Rules**: Adjust the rules according to your security needs
+- **Deployment**: Always build before deploying
+- **Testing**: Test authentication and database operations locally before deploying
