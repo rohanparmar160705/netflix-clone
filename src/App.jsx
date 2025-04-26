@@ -13,6 +13,8 @@ import HomeScreen from "./screens/HomeScreen";
 import Loader from "./screens/Loader";
 import LoginScreen from "./screens/LoginScreen";
 import ProfileScreen from "./screens/ProfileScreen";
+import { SubscriptionProvider } from "./contexts/SubscriptionContext";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
   const [userLoggedInStatusFound, setUserLoggedInStatusFound] = useState(false);
@@ -51,21 +53,21 @@ function App() {
   return (
     <div className="app">
       <Router>
-        {!user ? (
-          <LoginScreen />
-        ) : (
-          <Switch>
-            <Route exact path="/profile">
-              <ProfileScreen />
-            </Route>
-            <Route exact path="/">
-              <HomeScreen />
-            </Route>
-            <Route path="*">
-              <Redirect to="/" />
-            </Route>
-          </Switch>
-        )}
+        <SubscriptionProvider>
+          {!user ? (
+            <LoginScreen />
+          ) : (
+            <Switch>
+              <Route exact path="/profile">
+                <ProfileScreen />
+              </Route>
+              <ProtectedRoute exact path="/" component={HomeScreen} />
+              <Route path="*">
+                <Redirect to="/" />
+              </Route>
+            </Switch>
+          )}
+        </SubscriptionProvider>
       </Router>
     </div>
   );

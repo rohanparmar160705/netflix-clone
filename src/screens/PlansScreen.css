@@ -1,37 +1,110 @@
-.planScreen__plan {
+.plansScreen {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.plansScreen__error {
+  background-color: #fde8e8;
+  color: #e53e3e;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.plansScreen__subscription {
+  background-color: #f7fafc;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid #e2e8f0;
+}
+
+.plansScreen__subscription p {
+  margin: 0.5rem 0;
+  color: #4a5568;
+}
+
+.plansScreen__plans {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.plansScreen__plan {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  opacity: 0.8;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
 }
 
-.planScreen__plan:hover {
-  opacity: 1;
+.plansScreen__plan:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.planScreen__plan > button {
-  padding: 10px 30px;
-  font-size: 1rem;
+.plansScreen__info h3 {
+  margin: 0 0 0.5rem 0;
+  color: #2d3748;
+  font-size: 1.25rem;
+}
+
+.plansScreen__info p {
+  margin: 0;
+  color: #718096;
+}
+
+.plansScreen__button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
   font-weight: 600;
-  border: none;
   cursor: pointer;
-}
-.planScreen__plan > .planScreen__btn__currentPackage {
-  color: #fff;
-  background-color: gray;
-}
-.planScreen__plan > .planScreen__btn__subscribe {
-  color: #fff;
+  transition: all 0.2s ease;
   background-color: #e50914;
+  color: white;
+  border: none;
+  min-width: 150px;
 }
 
-@media (max-width: 767.98px) {
-  .planScreen__plan {
-    display: block;
-    padding: 20px;
-    opacity: 0.8;
+.plansScreen__button:hover:not(:disabled) {
+  background-color: #b91c1c;
+}
+
+.plansScreen__button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.plansScreen__button--current {
+  background-color: #48bb78;
+}
+
+.plansScreen__button--current:hover {
+  background-color: #38a169;
+}
+
+.plansScreen__loading {
+  text-align: center;
+  color: #718096;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+@media (max-width: 640px) {
+  .plansScreen {
+    padding: 1rem;
   }
-}
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+  .plansScreen__plan {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .plansScreen__button {
+    width: 100%;
+  }
 }

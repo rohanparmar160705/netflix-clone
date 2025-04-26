@@ -1,6 +1,7 @@
 .profileScreen {
-  height: 100vh;
+  min-height: 100vh;
   color: white;
+  background-color: #141414;
 }
 
 .profileScreen__body {
@@ -12,35 +13,40 @@
   padding-top: 140px;
   max-width: 800px;
 }
+
 .profileScreen__edit__profile {
-  font-size: calc(2rem + 0.9vw) !important;
+  font-size: calc(2rem + 0.9vw);
+  font-weight: 400;
+  border-bottom: 1px solid #282c2d;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .profileScreen__info {
   display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
 }
 
 .profileScreen__details {
   color: white;
-  margin-left: 25px;
   flex: 1;
 }
 
-.profileScreen__body > h1 {
-  font-size: 60px;
-  font-weight: 400;
-  border-bottom: 1px solid #282c2d;
-  margin-bottom: 20px;
-}
 .profileScreen__details > h2 {
-  background-color: gray;
-  padding: 15px;
+  background-color: #333;
+  padding: 15px 20px;
   font-size: 15px;
-  padding-left: 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  word-break: break-all;
 }
 
 .profileScreen__signout {
-  padding: 10px 20px;
+  padding: 12px 20px;
   font-size: 1rem;
   margin-top: 5%;
   margin-bottom: 30px;
@@ -50,29 +56,167 @@
   font-weight: 600;
   border: none;
   cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.profileScreen__signout:hover {
+  background-color: #f6121d;
 }
 
 .profileScreen__plans {
   margin-top: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 4px;
 }
 
 .profileScreen__plans > h3 {
-  border-bottom: 1px solid #2b2c2d;
+  border-bottom: 1px solid #282c2d;
   padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .profileScreen__info > img {
   height: 100px;
+  border-radius: 4px;
 }
 
+.profileScreen__payment-info {
+  margin: 20px 0;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.profileScreen__payment-info > h3 {
+  border-bottom: 1px solid #282c2d;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.profileScreen__payment-info > p {
+  color: #00ff00;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.profileScreen__payment-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.profileScreen__payment-table th,
+.profileScreen__payment-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.profileScreen__payment-table th {
+  font-weight: 500;
+  color: #e5e5e5;
+}
+
+.profileScreen__payment-table td {
+  color: #b3b3b3;
+}
+
+.profileScreen__payment-note {
+  margin-top: 15px;
+  padding: 10px;
+  background: rgba(0, 255, 0, 0.1);
+  border-radius: 4px;
+  color: #00ff00;
+  font-size: 14px;
+}
+
+.profileScreen__upi-info {
+  margin-top: 15px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+}
+
+/* Tablet */
 @media (max-width: 767.98px) {
   .profileScreen__body {
     width: 92%;
+    padding-top: 100px;
   }
+
+  .profileScreen__info {
+    padding: 15px;
+  }
+
   .profileScreen__info > img {
-    height: 45px;
+    height: 80px;
+  }
+
+  .profileScreen__details > h2 {
+    padding: 12px 15px;
+  }
+
+  .profileScreen__plans {
+    padding: 15px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+/* Mobile */
+@media (max-width: 480px) {
+  .profileScreen__body {
+    width: 95%;
+    padding-top: 80px;
+  }
+
+  .profileScreen__edit__profile {
+    font-size: calc(1.5rem + 0.5vw);
+    text-align: center;
+  }
+
+  .profileScreen__info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .profileScreen__info > img {
+    height: 60px;
+  }
+
+  .profileScreen__details {
+    width: 100%;
+  }
+
+  .profileScreen__details > h2 {
+    font-size: 14px;
+  }
+
+  .profileScreen__plans > h3 {
+    font-size: 1.2rem;
+  }
+
+  .profileScreen__signout {
+    padding: 10px 16px;
+  }
+
+  .profileScreen__payment-table {
+    font-size: 12px;
+  }
+
+  .profileScreen__payment-table th,
+  .profileScreen__payment-table td {
+    padding: 8px;
+  }
+
+  .profileScreen__payment-info > h3 {
+    font-size: 1.2rem;
+  }
 }

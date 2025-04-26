@@ -33,6 +33,7 @@ function LoginScreen() {
     setSignUpProcessOngoing(state);
   };
 
+  // eslint-disable-next-line no-unused-vars
   const hadnleDomLoad = (e) => {
     setDomLoaded(true);
   };

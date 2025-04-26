@@ -1,9 +1,9 @@
 .loginScreen {
   position: relative;
   height: 100%;
-  background: url("../images/background_login.jpg")
-    center no-repeat;
+  background: url("../images/background_login.jpg") center no-repeat;
   background-size: cover;
+  min-height: 100vh;
 }
 
 .loginScreen__body > h1 {
@@ -122,58 +122,144 @@
   }
 }
 
+/* Improved Media Queries */
+/* Mobile devices */
 @media (max-width: 575.98px) {
   .loginScreen__body {
     top: 20%;
+    padding: 0 15px;
   }
 
   .loginScreen__body > h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-bottom: 15px;
   }
 
   .loginScreen__body > h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
   }
 
   .loginScreen__body > h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
+
+  .loginScreen__input {
+    margin: 15px 0;
+  }
+
+  .loginScreen__input > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 
   .loginScreen__input > form > input {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 15px;
-    padding: 10px;
+    width: 90%;
+    margin: 0;
+    padding: 12px;
     font-size: 1rem;
-    display: block;
   }
 
   .loginScreen__getStarted {
-    padding: 8px 15px;
+    width: 90%;
+    padding: 12px;
     font-size: 1rem;
   }
 
   .loginScreen__logo {
-    width: 130px;
+    width: 100px;
+    padding-left: 10px;
   }
 
   .loginScreen__button {
-    padding: 6px 15px;
-    font-size: 1rem;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    top: 15px;
+    right: 15px;
   }
 }
 
+/* Tablets */
 @media (min-width: 576px) and (max-width: 767.98px) {
   .loginScreen__body {
     top: 25%;
+    padding: 0 20px;
+  }
+
+  .loginScreen__body > h1 {
+    font-size: 2.8rem;
+  }
+
+  .loginScreen__input > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
   }
 
   .loginScreen__input > form > input {
-    width: 100%;
+    width: 80%;
+    margin: 0;
+  }
+
+  .loginScreen__getStarted {
+    width: 80%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .loginScreen__body {
+    top: 28%;
+  }
+
+  .loginScreen__body > h1 {
+    font-size: 3rem;
+  }
+
+  .loginScreen__input > form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .loginScreen__input > form > input {
+    width: 50%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .loginScreen__body {
+    top: 30%;
+  }
+
+  .loginScreen__input > form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .loginScreen__body > h1 {
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 15px;
-    display: block;
+  }
+
+  .loginScreen__body > h2,
+  .loginScreen__body > h3 {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .loginScreen__input > form > input {
+    width: 35%;
   }
 }

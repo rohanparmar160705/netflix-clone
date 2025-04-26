@@ -5,42 +5,32 @@
   padding: 15px 0;
   z-index: 999;
   transition: all 0.5s ease-in;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.7) 0%,
-    transparent 100%
-  );
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 10%, transparent);
 }
 
 .nav__black {
-  background: #141414;
+  background: #111;
 }
 
 .nav__contents {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 4%;
-  max-width: 1920px;
+  padding: 0 50px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 .nav__left {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 40px;
 }
 
 .nav__logo {
   width: 100px;
-  cursor: pointer;
   object-fit: contain;
-  padding-right: 1rem;
-  transition: opacity 0.3s ease;
-}
-
-.nav__logo:hover {
-  opacity: 0.8;
+  cursor: pointer;
 }
 
 .nav__logo-link {
@@ -50,30 +40,20 @@
 
 .nav__links {
   display: flex;
-  gap: 1.5rem;
+  gap: 20px;
 }
 
 .nav__link {
   color: #e5e5e5;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 14px;
   font-weight: 500;
   transition: color 0.3s ease;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
 }
 
-.nav__link:hover {
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
+.nav__link:hover,
 .nav__link.active {
   color: #fff;
-  font-weight: 600;
 }
 
 .nav__right {
@@ -85,13 +65,8 @@
 .nav__avatar {
   width: 32px;
   height: 32px;
-  cursor: pointer;
   border-radius: 4px;
-  transition: transform 0.2s ease;
-}
-
-.nav__avatar:hover {
-  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .nav__avatar-link {
@@ -172,27 +147,22 @@
   color: #e50914;
 }
 
-@media (max-width: 768px) {
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .nav__contents {
+    padding: 0 20px;
+  }
+
   .nav__links {
     display: none;
   }
 
-  .nav__menu-button {
-    display: flex;
-  }
-
-  .nav__mobile-menu {
-    display: flex;
-    flex-direction: column;
+  .nav__left {
+    gap: 20px;
   }
 
   .nav__logo {
     width: 80px;
-  }
-
-  .nav__avatar {
-    width: 28px;
-    height: 28px;
   }
 }
 
