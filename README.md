@@ -5,6 +5,15 @@ A modern Vite React.js + Firebase project that replicates the core features and 
 ## 🌐 Live Demo
 Check out the live demo: [Netflix Clone](https://netflix-clone-eed7b.web.app/)
 
+## 🎥 Tutorial Video
+
+<video width="100%" controls>
+  <source src="./src/images/tutorial/netflix-clone-tutorial.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+*Watch the complete walkthrough of the Netflix Clone application*
+
 ## 📸 Application Flow Screenshots
 
 ### 1. Base Page (Landing)
