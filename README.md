@@ -5,10 +5,13 @@ A modern Vite React.js + Firebase project that replicates the core features and 
 ## 🌐 Live Demo
 Check out the live demo: [Netflix Clone](https://netflix-clone-eed7b.web.app/)
 
+## 📦 Repository
+[https://github.com/rohanparmar160705/netflix-clone](https://github.com/rohanparmar160705/netflix-clone)
+
 ## 🎥 Tutorial Video
 
 <video width="100%" controls>
-  <source src="./src/images/tutorial/netflix-clone-tutorial.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/tutorial/netflix-clone-tutorial.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
@@ -17,38 +20,38 @@ Check out the live demo: [Netflix Clone](https://netflix-clone-eed7b.web.app/)
 ## 📸 Application Flow Screenshots
 
 ### 1. Base Page (Landing)
-![Base Page](./screenshots/basepage.png)
+![Base Page](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/basepage.png)
 *Initial landing page with email signup form*
 
 ### 2. Login & Signup
-![Authentication](./screenshots/login-signup.png)
+![Authentication](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/login-signup.png)
 *User authentication screen with login/signup options*
 
 ### 3. Profile Screen
-![Profile](./screenshots/profile.png)
+![Profile](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/profile.png)
 *User profile management and settings*
 
 ### 4. Plans Selection
-![Subscription Plans](./screenshots/plans.png)
+![Subscription Plans](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/plans.png)
 *Subscription plans with Razorpay integration*
 
 ### 5. Home Screen
-![Home Screen](./screenshots/homescreen.png)
+![Home Screen](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/homescreen.png)
 *Main dashboard with movie categories and recommendations*
 
 <details>
 <summary>Additional Features Screenshots</summary>
 
 - **Movie Details**
-  ![Movie Details](./screenshots/movie-details.png)
+  ![Movie Details](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/movie-details.png)
   *Detailed movie information with trailer*
 
 - **Search Results**
-  ![Search](./screenshots/search.png)
+  ![Search](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/search.png)
   *Movie search functionality*
 
 - **Payment Process**
-  ![Payment](./screenshots/payment.png)
+  ![Payment](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/payment.png)
   *Razorpay payment integration*
 
 </details>
@@ -198,7 +201,8 @@ src/
 
 1. Clone the repository
 ```bash
-git clone [repository-url]
+git clone https://github.com/rohanparmar160705/netflix-clone.git
+cd netflix-clone
 ```
 
 2. Install dependencies
