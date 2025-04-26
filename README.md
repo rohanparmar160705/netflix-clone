@@ -8,11 +8,7 @@ Check out the live demo: [Netflix Clone](https://netflix-clone-eed7b.web.app/)
 ## 📦 Repository
 [https://github.com/rohanparmar160705/netflix-clone](https://github.com/rohanparmar160705/netflix-clone)
 
-## 🎥 Tutorial Video
 
-https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/netflix-clone-tutorial.mp4
-
-[![Watch Tutorial](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/BasePage.png)](https://drive.google.com/file/d/1Ru63s6BO9GNapldtY0MBmUCJbp7sWu8w/view?usp=sharing)
 
 **Click the image above to watch the video tutorial on Google Drive**
 
@@ -20,8 +16,12 @@ https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/netflix-c
 
 ## 📸 Application Flow Screenshots
 
-### 1. Base Page (Landing)
-![Base Page](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/BasePage.png)
+## 🎥 Tutorial Video
+
+### 1. Base Page (Landing) Click the image to watch the video of Project
+[![Watch Tutorial](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/BasePage.png)](https://drive.google.com/file/d/1Ru63s6BO9GNapldtY0MBmUCJbp7sWu8w/view?usp=sharing)
+
+
 *Initial landing page with email signup form*
 
 ### 2. Login & Signup
