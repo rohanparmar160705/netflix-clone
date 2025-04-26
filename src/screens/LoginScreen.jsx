@@ -43,9 +43,7 @@ function LoginScreen() {
       <div className="loginScreen__background">
         <img className="loginScreen__logo" src={netflixLogo} alt="" />
         <button
-          onClick={() =>
-            handleSignUpOrSignInFromGetStarted(false, true, false)
-          }
+          onClick={() => handleSignUpOrSignInFromGetStarted(false, true, false)}
           className="loginScreen__button"
         >
           Sign In
@@ -67,7 +65,10 @@ function LoginScreen() {
           />
         ) : (
           <>
-            <h1 className={`${domLoaded && "loginScreen__animation"}`}>
+            <h1
+              className={`${domLoaded && "loginScreen__animation"}`}
+              style={{ whiteSpace: "nowrap", fontSize: "2.8rem" }}
+            >
               Unlimited films, TV programmes and more.
             </h1>
             <h2 className={`${domLoaded && "loginScreen__animation"}`}>
