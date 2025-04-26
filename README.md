@@ -10,7 +10,7 @@ Check out the live demo: [Netflix Clone](https://netflix-clone-eed7b.web.app/)
 
 ## 🎥 Tutorial Video
 
-https://github.com/rohanparmar160705/netflix-clone/blob/main/src/images/tutorial/netflix-clone-tutorial.mp4
+https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/netflix-clone-tutorial.mp4
 
 *Watch the complete walkthrough of the Netflix Clone application*
 
