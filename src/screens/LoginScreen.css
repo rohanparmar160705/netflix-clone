@@ -34,6 +34,7 @@
   z-index: 1;
   color: #fff;
   padding: 20px;
+  max-width: 950px;
 }
 
 .loginScreen__gradient {
@@ -60,6 +61,12 @@
   font-weight: 600;
   border: none;
   cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+
+.loginScreen__button:hover {
+  background-color: #f40612;
 }
 
 .loginScreen__logo {
@@ -71,27 +78,42 @@
   padding-left: 20px;
 }
 
-.loginScreen__input > form > input {
-  padding: 12px;
-  outline-width: 0;
-  font-size: 1.2rem;
-  width: 40%;
-  border: none;
-  max-width: 500px;
+.loginScreen__input {
+  margin: 20px auto;
+  max-width: 800px;
 }
 
-.loginScreen__input {
-  margin: 20px;
+.loginScreen__input > form {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  flex-wrap: wrap;
+}
+
+.loginScreen__input > form > input {
+  padding: 15px;
+  outline-width: 0;
+  font-size: 1.2rem;
+  width: 50%;
+  border: none;
+  max-width: 500px;
+  min-width: 250px;
 }
 
 .loginScreen__getStarted {
-  padding: 12px 20px;
+  padding: 15px 25px;
   font-size: 1.2rem;
   color: white;
   background-color: #e50914;
   border: none;
   font-weight: 600;
   cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+
+.loginScreen__getStarted:hover {
+  background-color: #f40612;
 }
 
 /* Animation */
@@ -122,8 +144,7 @@
   }
 }
 
-/* Improved Media Queries */
-/* Mobile devices */
+/* Mobile devices (portrait phones) */
 @media (max-width: 575.98px) {
   .loginScreen__body {
     top: 20%;
@@ -131,17 +152,18 @@
   }
 
   .loginScreen__body > h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 15px;
+    white-space: normal !important;
   }
 
   .loginScreen__body > h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
   }
 
   .loginScreen__body > h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 0 10px;
   }
 
@@ -150,21 +172,22 @@
   }
 
   .loginScreen__input > form {
-    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    padding: 0 20px;
   }
 
   .loginScreen__input > form > input {
-    width: 90%;
+    width: 100%;
+    min-width: unset;
     margin: 0;
     padding: 12px;
     font-size: 1rem;
   }
 
   .loginScreen__getStarted {
-    width: 90%;
+    width: 100%;
     padding: 12px;
     font-size: 1rem;
   }
@@ -190,30 +213,38 @@
   }
 
   .loginScreen__body > h1 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
+    white-space: normal !important;
+  }
+
+  .loginScreen__body > h2 {
+    font-size: 1.8rem;
+  }
+
+  .loginScreen__body > h3 {
+    font-size: 1.2rem;
   }
 
   .loginScreen__input > form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    padding: 0 20px;
+    gap: 10px;
   }
 
   .loginScreen__input > form > input {
-    width: 80%;
-    margin: 0;
+    width: 100%;
+    min-width: unset;
   }
 
   .loginScreen__getStarted {
-    width: 80%;
+    width: auto;
+    min-width: 200px;
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
+/* Medium devices (tablets, landscape) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .loginScreen__body {
-    top: 28%;
+    top: 25%;
   }
 
   .loginScreen__body > h1 {
@@ -221,45 +252,32 @@
   }
 
   .loginScreen__input > form {
-    display: flex;
-    justify-content: center;
     gap: 10px;
   }
 
   .loginScreen__input > form > input {
-    width: 50%;
+    width: 45%;
   }
 }
 
-/* Large devices (desktops, 992px and up) */
+/* Large devices (desktops) */
 @media (min-width: 992px) {
   .loginScreen__body {
     top: 30%;
   }
 
   .loginScreen__input > form {
-    display: flex;
-    justify-content: center;
     gap: 10px;
   }
 
   .loginScreen__body > h1 {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .loginScreen__body > h2,
-  .loginScreen__body > h3 {
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 3.5rem;
   }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
+/* Extra large devices */
 @media (min-width: 1200px) {
   .loginScreen__input > form > input {
-    width: 35%;
+    width: 50%;
   }
 }
