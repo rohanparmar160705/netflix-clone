@@ -12,6 +12,10 @@ Check out the live demo: [Netflix Clone](https://netflix-clone-eed7b.web.app/)
 
 https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/netflix-clone-tutorial.mp4
 
+[![Watch Tutorial](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/BasePage.png)](https://drive.google.com/file/d/1Ru63s6BO9GNapldtY0MBmUCJbp7sWu8w/view?usp=sharing)
+
+**Click the image above to watch the video tutorial on Google Drive**
+
 *Watch the complete walkthrough of the Netflix Clone application*
 
 ## 📸 Application Flow Screenshots
