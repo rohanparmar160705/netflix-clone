@@ -1,0 +1,55 @@
+.footer__wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 40px auto;
+}
+
+.footer {
+  width: 90%;
+  margin: 0 auto;
+  color: gray;
+}
+
+.footer__top {
+  margin: 0 0 30px;
+  font-size: 1.2rem;
+}
+
+.footer__top a {
+  color: gray;
+  text-decoration: none;
+}
+
+.footer__top a:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
+.footer__links {
+  font-size: 14.5px;
+  list-style-type: disc;
+  display: block;
+  padding: 0;
+}
+
+.footer__link__item {
+  margin-bottom: 12px;
+  display: inline-block;
+  min-width: 100px;
+  width: 25%;
+  padding-right: 12px;
+  vertical-align: top;
+}
+
+.footer__link__item a {
+  color: gray;
+  text-decoration: none;
+}
+.footer__link__item :hover {
+  text-decoration: underline;
+}
+
+.footer__country {
+  font-size: 14.5px;
+  margin-top: 24px;
+}

@@ -1,0 +1,59 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isUserOwned(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    // Secure user data: Users can only read/write their own data
+    match /users/{userId} {
+      allow read, write: if isUserOwned(userId);
+
+      // Users can only read their own payment history
+      match /payments/{paymentId} {
+        allow read: if isUserOwned(userId);
+        allow write: if false;  // Payments should only be written by server
+      }
+    }
+
+    // Subscription document rules
+    match /subscriptions/{userId} {
+      allow read: if isUserOwned(userId);
+      allow write: if isUserOwned(userId);
+    }
+
+    // Secure content access based on subscription
+    match /content/{contentId} {
+      allow read: if resource.data.accessLevel == "free" || (
+        isAuthenticated() &&
+        exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.subscription.status == "active" &&
+        (
+          resource.data.accessLevel == "basic" && 
+          get(/databases/$(database)/documents/users/$(request.auth.uid)).data.subscription.planId in ["basic", "standard", "premium"]
+        ) ||
+        (
+          resource.data.accessLevel == "standard" && 
+          get(/databases/$(database)/documents/users/$(request.auth.uid)).data.subscription.planId in ["standard", "premium"]
+        ) ||
+        (
+          resource.data.accessLevel == "premium" && 
+          get(/databases/$(database)/documents/users/$(request.auth.uid)).data.subscription.planId == "premium"
+        )
+      );
+
+      // Only allow listing of content for authenticated users
+      allow list: if isAuthenticated();
+    }
+
+    // Default deny all other access
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

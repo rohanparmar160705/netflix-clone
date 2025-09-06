@@ -1,0 +1,283 @@
+.loginScreen {
+  position: relative;
+  height: 100%;
+  background: url("../images/background_login.jpg") center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.loginScreen__body > h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.loginScreen__body > h2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.loginScreen__body > h3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.loginScreen__body {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+  padding: 20px;
+  max-width: 950px;
+}
+
+.loginScreen__gradient {
+  width: 100%;
+  z-index: 1;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.loginScreen__button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #e50914;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+
+.loginScreen__button:hover {
+  background-color: #f40612;
+}
+
+.loginScreen__logo {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 150px;
+  object-fit: contain;
+  padding-left: 20px;
+}
+
+.loginScreen__input {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.loginScreen__input > form {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  flex-wrap: wrap;
+}
+
+.loginScreen__input > form > input {
+  padding: 15px;
+  outline-width: 0;
+  font-size: 1.2rem;
+  width: 50%;
+  border: none;
+  max-width: 500px;
+  min-width: 250px;
+}
+
+.loginScreen__getStarted {
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #e50914;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+
+.loginScreen__getStarted:hover {
+  background-color: #f40612;
+}
+
+/* Animation */
+.loginScreen__animation {
+  -webkit-animation: transitionedFadeIn 0.5s ease-out;
+  animation: transitionedFadeIn 0.5s ease-out;
+}
+
+@-webkit-keyframes transitionedFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes transitionedFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile devices (portrait phones) */
+@media (max-width: 575.98px) {
+  .loginScreen__body {
+    top: 20%;
+    padding: 0 15px;
+  }
+
+  .loginScreen__body > h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    white-space: normal !important;
+  }
+
+  .loginScreen__body > h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .loginScreen__body > h3 {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .loginScreen__input {
+    margin: 15px 0;
+  }
+
+  .loginScreen__input > form {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+  }
+
+  .loginScreen__input > form > input {
+    width: 100%;
+    min-width: unset;
+    margin: 0;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .loginScreen__getStarted {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .loginScreen__logo {
+    width: 100px;
+    padding-left: 10px;
+  }
+
+  .loginScreen__button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    top: 15px;
+    right: 15px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .loginScreen__body {
+    top: 25%;
+    padding: 0 20px;
+  }
+
+  .loginScreen__body > h1 {
+    font-size: 2.5rem;
+    white-space: normal !important;
+  }
+
+  .loginScreen__body > h2 {
+    font-size: 1.8rem;
+  }
+
+  .loginScreen__body > h3 {
+    font-size: 1.2rem;
+  }
+
+  .loginScreen__input > form {
+    padding: 0 20px;
+    gap: 10px;
+  }
+
+  .loginScreen__input > form > input {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .loginScreen__getStarted {
+    width: auto;
+    min-width: 200px;
+  }
+}
+
+/* Medium devices (tablets, landscape) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .loginScreen__body {
+    top: 25%;
+  }
+
+  .loginScreen__body > h1 {
+    font-size: 3rem;
+  }
+
+  .loginScreen__input > form {
+    gap: 10px;
+  }
+
+  .loginScreen__input > form > input {
+    width: 45%;
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 992px) {
+  .loginScreen__body {
+    top: 30%;
+  }
+
+  .loginScreen__input > form {
+    gap: 10px;
+  }
+
+  .loginScreen__body > h1 {
+    font-size: 3.5rem;
+  }
+}
+
+/* Extra large devices */
+@media (min-width: 1200px) {
+  .loginScreen__input > form > input {
+    width: 50%;
+  }
+}
